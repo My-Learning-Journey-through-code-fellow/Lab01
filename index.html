@@ -12,14 +12,14 @@
   </head>
   <body>
     <header>
-        <h1>Lab 01</h1>
+        <h1 style="background-color: green; color: yellow">Lab 01</h1>
     </header> 
     <main>
       <!-- Inline CSS Styling -->
-      <p style="background-color:black; color:antiquewhite ">What is your name?</p>
-      <p>What is your age?</p>
-      <p></p>
-      <p></p>
+      <p style="background-color:black; color:antiquewhite">What is your name?</p>
+      <p style="background-color: aquamarine; color:black">What is your Favorite Color?</p>
+      <p style="background-color:blue; color:bisque">What is your favorite food?</p>
+      <p style="background-color:brown; color:blanchedalmond">Where would you like vacation?</p>
     </main>
     <footer></footer>
     <!-- Internal Script Tag -->
@@ -32,8 +32,16 @@
 
       let userResponseTwo = prompt('What is your favorite color?');
       console.log('user response to Q2: ', userResponseTwo)
-      alert('Wow, ' + userResponseTwo + ' What a great color!');
+      alert(userResponseOne + ', You chose ' + userResponseTwo + ' ,What a great color!');
 
+      let userResponseThree = prompt('What is your favorite food?');
+      console.log('user response to Q3: ', userResponseThree)
+      alert(userResponseOne + ', wouldnt ' + userResponseTwo + ' ' + userResponseThree + ', make such an odd dish?');
+
+      let userResponseFour = prompt('Where would you like vacation?');
+      console.log('user response to Q4: ', userResponseFour)
+      alert(userResponseOne + ', Would you eat, ' + userResponseTwo + ' ' + userResponseThree + 'while on vacation in ' +  userResponseFour + '?');
     </script>
+    <!-- Group Collaboration with Chris, Hunter -->
   </body>
 </html>
